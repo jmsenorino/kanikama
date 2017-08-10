@@ -1,0 +1,2 @@
+# kanikama
+Kanikama Idle
