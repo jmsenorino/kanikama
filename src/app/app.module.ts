@@ -2,13 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { PlayerCardComponent } from './player-card/player-card.component';
+import { GameComponent } from './game/game.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { PlayerStatusBarComponent } from './player-status-bar/player-status-bar.component'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlayerCardComponent,
+    GameComponent,
+    PlayerStatusBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
