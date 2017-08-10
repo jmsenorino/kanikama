@@ -17,6 +17,8 @@ export class PlayerCardComponent implements OnInit
 
   ngOnInit()
   {
+    var level = this.playerService.getLevel(this.player.xp, this.player.lvl);
+    console.log("LEVEL: "+level);
   }
 
 }

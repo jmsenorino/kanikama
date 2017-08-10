@@ -16,8 +16,8 @@ export class GameComponent implements OnInit {
   ngOnInit() {
     this.player = new Player();
     this.player.name = "pepe";
-    this.player.gold = 6;
-    this.player.xp = 69;
+    this.player.gold = 0;
+    this.player.xp = 0;
     this.player.lvl = 1;
     this.player.image = "IMG"
   }
