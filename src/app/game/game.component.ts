@@ -22,4 +22,8 @@ export class GameComponent implements OnInit {
     this.player.image = 'IMG';
   }
 
+    // getPlayer() {
+    //     return this.player;
+    // }
+
 }

@@ -1,29 +1,34 @@
 import { Injectable } from '@angular/core';
+import { Player } from './player';
+import { GameComponent } from './game/game.component';
 
 @Injectable()
 export class PlayerService {
 
-  constructor() { }
+    constructor() { }
 
-  getLevel(experience: number, level: number): Number {
-    const baseXP = this.getBaseXP(100, level);
-    if (baseXP < experience) {
-      return level + 1;
-    } else {
-        return level;
-    }
-  }
+        getLevel(experience: number, level: number): Number {
+            const baseXP = this.getBaseXP(100, level);
+            if (baseXP < experience) {
+                return level + 1;
+            } else {
+                return level;
+            }
+        }
 
-  private getBaseXP(baseExperience: number, level: number ): Number {
-    console.log(baseExperience + '' + level);
-    if (level === 1) {
-      return baseExperience;
-    } else {
-      return this.getBaseXP(baseExperience * 2, level - 1);
-    }
-  }
+        private getBaseXP(baseExperience: number, level: number ): Number {
+            console.log(baseExperience + '' + level);
+            if (level === 1) {
+                return baseExperience;
+            } else {
+                return this.getBaseXP(baseExperience * 2, level - 1);
+            }
+        }
 
+        // continuousXp() {
+        // }
 
-
-
+        // private addXp() {
+        //     GameComponent.getPlayer();
+        // }
 }
