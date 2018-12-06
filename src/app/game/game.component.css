@@ -1,7 +1,16 @@
 .coral{
     background: coral;
+    height: 100vh;
 }
 
 .green{
     background: green;
+}
+
+.purple{
+    background: purple;
+}
+
+.blue{
+    background: blue;
 }

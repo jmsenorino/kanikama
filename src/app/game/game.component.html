@@ -1,11 +1,7 @@
-<div fxLayout="column" class="coral">
-    <app-player-status-bar [player]="player"></app-player-status-bar>
+<div fxLayout="column"  class="coral">
+    <app-player-status-bar class="purple" fxFlex="10" [player]="player"></app-player-status-bar>
     
-    <div fxFlex='60' fxLayout="row" class="green">
-        <app-player-card [player]="player"></app-player-card>
-    </div>
+    <app-player-card class="green" fxFlex="60" [player]="player"></app-player-card>
     
-    <div>
-        <app-toolbar [player]="player"></app-toolbar>
-    </div>
+    <app-toolbar class="blue" fxFlex="30" [player]="player"></app-toolbar>
 </div>

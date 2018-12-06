@@ -8,18 +8,18 @@ import { Player } from '../player';
 })
 export class GameComponent implements OnInit {
 
-  player : Player;
+  player: Player;
 
 
   constructor() { }
 
   ngOnInit() {
     this.player = new Player();
-    this.player.name = "pepe";
+    this.player.name = 'pepe';
     this.player.gold = 0;
     this.player.xp = 0;
     this.player.lvl = 1;
-    this.player.image = "IMG"
+    this.player.image = 'IMG';
   }
 
 }
